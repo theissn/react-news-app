@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getNews } from '../../api/newsapi';
 import NewsItem from './NewsItem';
-import LoadingMoreButton from '../LoadingMoreButton';
 
 function NewsLister({ country, query }) {
   const [loadingMore, setLoadingMore] = useState(false)
