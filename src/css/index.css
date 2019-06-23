@@ -1,0 +1,9 @@
+main {
+  display: grid !important;
+  grid-gap: 2em; /* [1] Add some gap between rows and columns */
+  grid-template-columns: repeat( auto-fill, minmax( 300px, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
+  grid-auto-rows: auto-fill; /* [3] Set the height for implicitly-created row track */
+
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px; */
+}
